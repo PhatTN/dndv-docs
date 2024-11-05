@@ -5,8 +5,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "DNDV - Trung tâm hỗ trợ",
-  tagline: "Đúng Người Đúng Việc - Trung tâm hỗ trợ",
+  title: "ĐNĐV - Trung tâm hỗ trợ",
+  tagline: "Hướng dẫn sử dụng Đúng Người Đúng Việc",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -35,12 +35,9 @@ const config: Config = {
     [
       "classic",
       {
+        blog: false,
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -50,10 +47,9 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: "img/social-card.png",
     navbar: {
-      title: "DNDV",
+      title: "ĐNĐV",
       logo: {
         alt: "Đúng Người Đúng Việc Logo",
         src: "img/logo.svg",
@@ -61,10 +57,22 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "consultingSidebar",
           position: "left",
-          label: "Hướng dẫn",
+          label: "Tư vấn 1-1",
         },
+        // {
+        //   type: "docSidebar",
+        //   sidebarId: "seekingJobsSidebar",
+        //   position: "left",
+        //   label: "Tìm việc",
+        // },
+        // {
+        //   type: "docSidebar",
+        //   sidebarId: "recruitmentSidebar",
+        //   position: "left",
+        //   label: "Tuyển dụng",
+        // },
         {
           href: "https://dungnguoidungviec.com",
           label: "Trang chủ",
@@ -73,7 +81,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
+      style: "light",
       links: [
         {
           title: "Docs",
@@ -85,35 +93,39 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
+          title: "Link nhanh",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Tư vấn 1-1",
+              href: "https://dungnguoidungviec.com/tu-van",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "Tìm Mentor",
+              href: "https://dungnguoidungviec.com/mentor/tim-kiem",
             },
           ],
         },
-        // {
-        //   title: "More",
-        //   items: [
-        //     {
-        //       label: "Blog",
-        //       to: "/blog",
-        //     },
-        //     {
-        //       label: "GitHub",
-        //       href: "https://github.com/facebook/docusaurus",
-        //     },
-        //   ],
-        // },
+        {
+          title: "Mạng xã hội",
+          items: [
+            {
+              label: "Facebook",
+              href: "https://www.facebook.com/dungnguoidungvieccommunity",
+            },
+            {
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/company/dungnguoidungviec",
+            },
+            {
+              label: "Tiktok",
+              href: "https://www.tiktok.com/@dungnguoidungviecc",
+            },
+            {
+              label: "Youtube",
+              href: "https://www.youtube.com/@dungnguoidungviec",
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Đúng Người Đúng Việc`,
     },
