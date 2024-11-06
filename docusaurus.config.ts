@@ -88,7 +88,7 @@ const config: Config = {
           items: [
             {
               label: "Tư vấn 1-1",
-              to: "/docs/tu-van",
+              to: "/docs/tu-van/tutorial-basics/create-a-page",
             },
           ],
         },
