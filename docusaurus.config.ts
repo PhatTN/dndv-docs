@@ -84,11 +84,11 @@ const config: Config = {
       style: "light",
       links: [
         {
-          title: "Docs",
+          title: "Tài liệu",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: "Tư vấn 1-1",
+              to: "/docs/tu-van",
             },
           ],
         },
