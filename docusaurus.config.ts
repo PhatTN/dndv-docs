@@ -83,15 +83,15 @@ const config: Config = {
     footer: {
       style: "light",
       links: [
-        {
-          title: "Tài liệu",
-          items: [
-            {
-              label: "Tư vấn 1-1",
-              to: "/docs/tu-van/tutorial-basics/create-a-page",
-            },
-          ],
-        },
+        // {
+        //   title: "Tài liệu",
+        //   items: [
+        //     {
+        //       label: "Tư vấn 1-1",
+        //       to: "/docs/tu-van/tutorial-basics/create-a-page",
+        //     },
+        //   ],
+        // },
         {
           title: "Link nhanh",
           items: [
