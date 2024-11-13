@@ -1,0 +1,10 @@
+{
+  "position": 2,
+  "label": "Chương trình cộng đồng",
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Chương trình cộng đồng"
+  }
+}
