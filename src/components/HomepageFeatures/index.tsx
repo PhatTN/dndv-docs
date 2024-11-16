@@ -1,9 +1,11 @@
+import Link from "@docusaurus/Link";
 import Heading from "@theme/Heading";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
+  href: string | null;
   Svg: React.ComponentType<React.ComponentProps<"svg">>;
   description: JSX.Element;
 };
@@ -11,6 +13,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Tư vấn 1-1",
+    href: "/tu-van/danh-cho-mentor/huong-dan-dang-ky",
     Svg: require("@site/static/img/consulting.svg").default,
     description: (
       <>
@@ -21,6 +24,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Tìm việc",
+    href: null,
     Svg: require("@site/static/img/seeking-jobs.svg").default,
     description: (
       <>
@@ -31,6 +35,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Tuyển dụng",
+    href: null,
     Svg: require("@site/static/img/recruitment.svg").default,
     description: (
       <>
@@ -41,14 +46,20 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, href, Svg, description }: FeatureItem) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        {href ? (
+          <Link href={href}>
+            <Heading as="h3">{title}</Heading>
+          </Link>
+        ) : (
+          <Heading as="h3">{title}</Heading>
+        )}
         <p>{description}</p>
       </div>
     </div>
