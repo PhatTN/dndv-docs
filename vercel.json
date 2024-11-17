@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/docs/tu-van/Mentor/huong-dan-dang-ky",
+      "destination": "/tu-van/danh-cho-mentor/huong-dan-dang-ky",
+      "permanent": true
+    }
+  ]
+}
